@@ -141,6 +141,7 @@
 
         </style>
         <script>
+            // 아론 하단 메뉴 4개
             function QBtn(obj){
                 var msgObj = document.querySelector(".wc-message-wrapper");
                 if(obj.innerText =="아론소개"){
@@ -152,6 +153,8 @@
                 }
                     
             }
+
+            // 메시지 보내기
             function sendMsg(){
                 var msgObj = document.querySelector(".wc-message-wrapper");
                 var msg = document.querySelector("[name=send]").value;
@@ -192,7 +195,7 @@
             </div>
             <div class="wc-console">
                     <input type="text" name="send" placeholder="메세지를 입력하세요..."/>
-                    <input type="image" src="media/btn.JPG" onclick="sendMsg()" />
+                    <input type="image" src="media/btn.png" onclick="sendMsg()" />
             </div>
         </div>
     </body>
