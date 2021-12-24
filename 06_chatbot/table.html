@@ -4,6 +4,22 @@
         <meta charset="UTF-8">
         <title></title>
         <style>
+            #menuTab tr> td {
+                text-align: center;
+            }
+            #menuTab tr> td > button{
+                width: 140px;
+                background: white;
+                border: 1px solid #6d6e72;
+                border-radius: 10px 10px 10px 10px;
+                padding: 10px 10px;
+                text-align: left;
+            
+            }
+            #menuTab tr> td > button:hover {
+                color : #fff;
+                background: #555;
+            }
 
         </style>
         <script>
@@ -11,16 +27,16 @@
         </script>    
     </head>
     <body>
-        <table border >
-            <tr><td>운항 스케줄</td><td>출도착 정보</td></tr>
-            <tr><td>항공권 구매</td><td>운임 조회</td></tr>
-            <tr><td>이벤트 현황</td><td>여행지 추천</td></tr>
-            <tr><td>예약 조회</td><td>사전 좌석 배정</td></tr>
-            <tr><td>OZ 서비스</td><td>수하물 정보</td></tr>
-            <tr><td>공항 서비스</td><td>마이 아시아나</td></tr>
-            <tr><td>아시아나 클럽</td><td>스타 얼라이언스</td></tr>
-            <tr><td>OZ 연락처</td><td>질문가이드</td></tr>
-            <tr><td>코로나19</td><td>챗봇 만족도</td></tr>
+        <table id='menuTab'>
+            <tr><td><button>운항 스케줄</button></td><td><button>출도착 정보</button></td></tr>
+            <tr><td><button>항공권 구매</button></td><td><button>운임 조회</button></td></tr>
+            <tr><td><button>이벤트 현황</button></td><td><button>여행지 추천</button></td></tr>
+            <tr><td><button>예약 조회</button></button></td><td><button>사전 좌석 배정</button></td></tr>
+            <tr><td><button>OZ 서비스</button></td><td><button>수하물 정보</button></td></tr>
+            <tr><td><button>공항 서비스</button></td><td><button>마이 아시아나</button></td></tr>
+            <tr><td><button>아시아나 클럽</button></td><td><button>스타 얼라이언스</button></td></tr>
+            <tr><td><button>OZ 연락처</button></td><td><button>질문가이드</button></td></tr>
+            <tr><td><button>코로나19</button></td><td><button>챗봇 만족도</button></td></tr>
         </table>
     </body>
 </html>
