@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="UTF-8">
+      <title>오늘도 감사한 날! 화이팅!</title>
+      
+      <script>
+      window.onload=function(){
+         var h2Arr = document.querySelectorAll("h2");
+         h2Arr[0].innerText = "여정/날짜 선택";
+      }            
+      </script>
+      <style>
+		input[name=method]:active{
+			background:red;
+		}
+      </style>
+   </head>
+   <body>
+      <h2></h2>
+      <input type ="button" name ="method" value="왕복" style="width:60pt;height:20pt" style="cursor:pointer"/>
+      <input type ="button" name ="method" value="편도" style="width:60pt;height:20pt" style="cursor:pointer"/>
+      <input type ="button" name ="method" value="다구간" style="width:60pt;height:20pt" style="cursor:pointer"/>
+      <br>
+      <br>  
+      <form>
+            <input type = "text" name ="first" textarea placeholder="출발지" style="width:150pt;height:30pt"/>
+            <input type = "text" name ="first" textarea placeholder="도착지" style="width:150pt;height:30pt"/>
+            <input type = "text" name ="first" textarea placeholder="탑승일" style="width:150pt;height:30pt"/>
+      </form>
+      <br>
+      <br>
+      <h2>탑승 인원 선택</h2>
+      성인 (만 12세 이상)&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+      소아 (만 2세 ~ 12세 미만)&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+      유아 (만 2세 미만)
+      <br>
+      <br>
+      <br>
+      <h2>좌석등급 선택</h2>
+      <input type = "button" name ="first" value = "이코노미 특가" style="width:150pt;height:30pt;text-align:center;"/>
+      <input type = "button" name ="first" value = "이코노미 일반" style="width:150pt;height:30pt;text-align:center;"/>
+      <input type = "button" name ="first" value = "비즈니스" style="width:150pt;height:30pt;text-align:center;"/>
+      <input type = "button" name ="first" value = "퍼스트" style="width:150pt;height:30pt;text-align:center;"/>
+   	
+   </body>
+</html>
