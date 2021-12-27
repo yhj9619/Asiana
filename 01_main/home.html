@@ -3,31 +3,149 @@
     <head>
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
         <link rel = "stylesheet" type = "text/css" href = "style.css">
+    <style>
+        .main_header_wrap{
+            display: block;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1500;
+        }
+
+        li{
+            list-style: none;
+        }
+        
+        .util_rap{
+            position: relative;
+            background: white;
+            height: 40px;
+            box-sizing: border-box;
+        }
+        .inner{
+            position: relative;
+            width: 1180px;
+            margin: 0 auto;
+            /* padding-top: 11px; */
+            box-sizing: border-box;
+            font-size: 13px;
+            color: #222;
+        }
+        .top1{
+            margin: 5px 5px;
+            display: flex;
+            float: left;
+        }
+        .top2{
+            margin: 5px 5px;
+            display: flex;
+            float: right;
+        }
+        .main{
+            background-color: white;
+        }
+        .h._inner{
+            position: relative;
+            width: 1180px;
+            height: 100%;
+            margin: 0 auto;
+            display: flex;
+            float: left;
+        }
+        .h_inner .logo{
+            position: relative;
+            z-index: 2;
+            display: inline-block;
+            width: 202px;
+            height: 38px;
+            margin: 15px 100px 0 0;
+        }
+
+        .nav{
+            position: relative;
+            float: left;
+            height: 83px;
+            box-sizing: border-box;
+        }
+
+        .nav_list{
+            height: 100%;
+        }
+        
+        .nav_list > li{
+            float: left;
+            height: 100%;
+        }
+
+        .nav_list > li > a{
+            position: relative;
+            display: inline-block;
+            padding: 0 20px;
+            min-width: 120px;
+            height: 100%;
+            box-sizing: border-box;
+            margin-left: 15px;
+            font-weight: bold;
+            font-size: 18px;
+            text-align: center;
+            color: #000;
+            line-height: 78px;
+        }
+
+        .nav_right{
+            position: relative;
+            margin-top: 30px;
+            display: flex;
+            float: right;
+        }
+    </style>
+    
     </head>
     <body>
-        <div class = "top">
-        <a href = "https://flyasiana.com/C/KR/KO/club/earn-mileage-mall?menuId=CM201802220000728447"><li> 마일리지 적립몰 | </a></li>
-        <a href = "https://dutyfree.flyasiana.com/foMain.do?globalLang=ko"><li> 기내면세점 | </a></li>
-        <a href = "https://flyasiana.com/I/KR/KO/ACTQuick.do"> 기업우대<li></a></li>
-    </div>
-    <div class = "top2">
-        <a href = "https://flyasiana.com/I/KR/KO/viewLogin.do?callType=IBE&menuId=CM201802220000728453"><li> 로그인 | </a></li>
-        <a href = "https://flyasiana.com/C/KR/KO/event/index?menuId=CM201802220000728482"><li>  이벤트 | </a></li>
-        <a href = "https://flyasiana.com/C/KR/KO/customer/main?menuId=CM201802220000728474"> 고객센터 |<li></a></li>
-    </div>
-    
-        <div class = "wrap">
-            <div class = "intro">
-                <div class = "header">
-                    <div class = "home main">
-                        <a href = "https://flyasiana.com/C/KR/KO/index">ASIANA AIRLINES<li></a></li>
+        <div class="main_header_wrap">
+            <div id="util.rap">
+                <div class = "inner">
+                    <div class = "top1">
+                        <li><a href = "#" target="_self">마일리지 적립몰</a></li>
+                        |
+                        <li><a href = "#" target="_self">기내면세점</a></li>
+                        |
+                        <li></li><a href = "#" target="_self">기업우대</a></li>
+                    </div>
+                    <div class = "top2">
+                        <li><a href = "#" target="_self">로그인</a></li>
+                        |
+                        <li><a href = "#" target="_self">이벤트</a></li>
+                        |
+                        <li><a href = "#" target="_self">고객센터</a></li>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="main">
+                <div class="h_inner">
+                    <div class = "logo">
+                        <a href = "home.html"><img src="media/logo.JPG"/></a>
+                    </div>
+                    <nav id="nav">
+                        <div class = "nav_list">
+                            <li><a href = "#" target="_self">예약</a></li>
+                            <li><a href = "#" target="_self">여행 준비</a></li>
+                            <li><a href = "#" target="_self">여행</a></li>
+                            <li><a href = "#" target="_self">아시아나클럽</a></li>
                         </div>
-                        <ul class = "nav">
-                           <a href = "https://flyasiana.com/I/KR/KO/RevenueRegistTravel.do"><li>예약</a></li>
-                           <a href = "https://flyasiana.com/C/KR/KO/contents/online-check-in"><li>여행 준비</a></li>
-                           <a href = "https://flyasiana.com/C/KR/KO/travel/airport"><li>여행</a></li>
-                           <a href = "https://flyasiana.com/C/KR/KO/contents/membership-system-registration"><li>아시아나클럽</a></li>
-                        </ul>
+                    </nav>
+                    <div class="nav_right">
+                        <div class="chatbot_area">
+                            <a href="#"><img class="btn_chatbot" src="media/aron.JPG" height="50"width="50" onclick="window.open('../06_chatbot/aron.html','챗봇','width=480, height=870')"/></a>
+                        </div>
+                        <div class="myasiana_area">
+                            <a href="../03_mypage/mypage.html"><img class="btn_myasiana" src="media/mypage.JPG" height="50"width="50"/></a>
+                        </div>
+                        <div class="search_area">
+                            <a href="#"><img class="btn_search" src="media/search.JPG" height="50"width="50"/></a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
