@@ -71,7 +71,7 @@
                 width:50px;
             }
 
-            .aronbox{
+            .aron > div{
                 color:#555;
                 background: white;
                 border: 1px solid #ddd;
@@ -81,7 +81,7 @@
                 font-size: 13px;
             }
 
-            .sendbox{
+            .send > div{
                 color:#fff;
                 background: #d60815;
                 border: 1px solid #ddd;
@@ -205,15 +205,21 @@
             function QBtn(obj){
                 var msgObj = document.querySelector(".wc-message-wrapper");
                 // 하단 메뉴 호출 시 내가 보내는 채팅
-                var sendText = "<div class=\"send\"><div class=\"sendbox\"><p>"+obj.innerText+"</p></div></div>";
+                var sendText = "<div class=\"send\"><div><p>"+obj.innerText+"</p></div></div>";
                 // 하단 메뉴 호출 시 아론이 보내는 채팅 기본
                 var aronText01 = "<div class=\"aron\"><img src=\"media/aron.png\"/><div class=\"aronbox\">";
                 var aronText02 = "</div></div>";
 
+                // 퀵메뉴
+                //아론소개
                 var intro = "<div id='introBtn'><button>\"아론\"을 소개할게요! </button><button>어디에서 만나볼 수 있을까요?</button></div>";
+                // 메뉴
                 var menu = "<p>♣ 코로나 19로 힘들었던 기억은 잠시 잊고 즐거운 크리스마스 되세요! ^^</p><p>아시아나항공의 챗봇 서비스’아론 (Aaron)’ 입니다. 항공 여행에 필요한 다양한 정보를 24시간 신속하게 안내할게요!</p><p>조회하고자 하시는 메뉴를 ‘선택’ 혹은 채팅창에 자유롭게 질문 내용을 '입력’해주세요.</p><p>대화 도중 안내 메뉴를 확인하고자 하실 경우, 화면 하단의 ‘메뉴’ 혹은 ‘새질문’ 버튼을 선택해주세요. ~ ♥</p>"
+                // 새 질문
                 var newQ = "<p>새로운 질문의 유형을 선택하시거나, 자유롭게 질문을 입력해주세요~</p>";
+                // 메뉴, 새 질문 공통 버튼
                 var menuBtn = "<table id='menuTab'><tr><td><button>운항 스케줄</button></td><td><button>출도착 정보</button></td></tr><tr><td><button>항공권 구매</button></td><td><button>운임 조회</button></td></tr><tr><td><button>이벤트 현황</button></td><td><button>여행지 추천</button></td></tr> <tr><td><button>예약 조회</button></button></td><td><button>사전 좌석 배정</button></td></tr><tr><td><button>OZ 서비스</button></td><td><button>수하물 정보</button></td></tr> <tr><td><button>공항 서비스</button></td><td><button>마이 아시아나</button></td></tr> <tr><td><button>아시아나 클럽</button></td><td><button>스타 얼라이언스</button></td></tr><tr><td><button>OZ 연락처</button></td><td><button>질문가이드</button></td></tr><tr><td><button>코로나19</button></td><td><button>챗봇 만족도</button></td></tr></table>";
+                // 종료
                 var end = "<p>저와의 대화는 어떠셨나요?고객님의 소중한 의견은 저를 더욱 성장시킵니다. 자유롭게 의견을 말씀해주세요~</p><button id='endBtn'>참여하기</button>"
 
                 if(obj.innerText =="아론소개"){
@@ -231,10 +237,10 @@
             function sendMsg(){
                 var msgObj = document.querySelector(".wc-message-wrapper");
                 var msg = document.querySelector("[name=send]").value;
-                msgObj.innerHTML +=  "<div class=\"send\"><span class=\"sendbox\"><h4>"+msg+"</h4></span></div>";
+                msgObj.innerHTML +=  "<div class=\"send\"><div><h4>"+msg+"</h4></div></div>";
                 document.querySelector("[name=send]").value = ""; // input[type=text] 리셋
             }
-        </script>    
+        </script>
     </head>
     <body>
         <div id="main">
@@ -255,7 +261,7 @@
             <div class="wc-message-wrapper">
                 <div class="aron">
                     <img src="media/aron.png"height="50"width="50"/>
-                    <div class="aronbox">
+                    <div>
                         <p>♣ 코로나 19로 힘들었던 기억은 잠시 잊고 즐거운 크리스마스 되세요! ^^</p>
                         <p>아시아나항공의 챗봇 서비스’아론 (Aaron)’ 입니다. 항공 여행에 필요한 다양한 정보를 24시간 신속하게 안내할게요!</p>
                         <p>조회하고자 하시는 메뉴를 ‘선택’ 혹은 채팅창에 자유롭게 질문 내용을 '입력’해주세요.</p>
