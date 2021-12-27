@@ -1,0 +1,93 @@
+@charset "UTF-8";
+h3 {	
+		    margin: 60px 0 50px 0;
+    font-size: 40px;
+    color: #000;
+    text-align: center;
+    font-weight: normal;
+    line-height: 1; 
+}
+
+.total_search_input {
+    position: relative;
+    padding: 40px 0;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+}
+
+
+
+
+
+element.style{
+	width: 180px;
+} 
+.total_search_input.type02 select {
+    height: 46px;
+}
+.total_search_input.type02 select, .total_search_input.type02 input, .total_search_input.type02 .btn_M {
+    float: left;
+}
+select.white {
+    height: 40px;
+    border: 1px solid #cdd1d3;
+    background: #fff url(https://flyasiana.com/C/pc/image/common/bg_select_arrow.png) no-repeat right 13px top 50%;
+}
+select {
+    height: 46px;
+    padding: 0 45px 0 15px;
+    margin-right: 10px;
+    border: 1px solid #f3f3f3;
+    border-bottom: 1px solid #ddd;
+    background: #f3f3f3 url(https://flyasiana.com/C/pc/image/common/bg_select_arrow.png) no-repeat right 13px top 50%;
+    background-size: 12px 8px;
+    color: #222;
+    vertical-align: middle;
+}
+
+
+
+
+
+.total_search_input.type02 input {
+    width: 400px;
+    height: 46px;
+    border: 1px solid #ccc;
+    vertical-align: top;
+    box-sizing: border-box;
+}
+
+.total_search_input.type02 select, .total_search_input.type02 input, .total_search_input.type02 .btn_M {
+    float: left;
+}
+.total_search_input input {
+    width: 614px;
+    height: 44px;
+    margin-right: 0;
+    padding: 0 35px 0 15px;
+    border: 1px solid #ccc;
+    line-height: 44px;
+    background-color: #fff;
+}
+
+
+.total_search_input.type02 select, .total_search_input.type02 input, .total_search_input.type02 .btn_M {
+    float: left;
+}
+button.red {
+    border: 1px solid #d60815;
+    background-color: #d60815;
+    color: #fff;
+}
+.btn_M {
+    padding: 11px 30px;
+    font-size: 15px;
+    min-height: 46px;
+    line-height: 17px;
+}
+.btn_L, .btn_M, .btn_S, .btn_XS {
+    border-radius: 3px;
+    text-align: center;
+}
+
+
