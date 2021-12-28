@@ -133,6 +133,10 @@ button.red {
     border-bottom: 1px solid #646668;
 }
 
+.noticeList > div:hover{
+    background-color: #f7f7f7;
+}
+
 .noticeList > div > span {
     display: inline-block;
     min-width: 126px;
@@ -144,3 +148,4 @@ button.red {
     font-weight: bold;
     margin-right:50%;
 }
+
