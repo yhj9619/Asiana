@@ -1,4 +1,11 @@
+<<<<<<< HEAD
 .my_info_wrap{
+=======
+.myCls{
+    display:flex;
+    width:1500px;
+    height:250px;
+>>>>>>> d24bc1b4be44ecb0ed2ffe518edcab952aa0d55c
     background-image:url('../03_mypage/media/cloud.jpg');
     width: 2500px;
     height: 300px;

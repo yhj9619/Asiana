@@ -2,21 +2,73 @@
 <html>
    <head>
       <meta charset="UTF-8">
-	  <link rel = "stylesheet" type = "text/css" href = "../00_css/main.css">
-	  <link rel="stylesheet" href="../00_css/04_support.css">  
       <title>공지사항 | 아시아나항공</title>
       <style>
-    	  
-      </style>
-	  <script src="../00_jquery/jquery-3.6.0.js" type="text/javascript"></script>
-      <script>
+    	 ul li{list-style-type: none; float:left;} 
 
+
+      </style>
+	  <script>
+		window.onload=function(){
+			var n01 = new Notice("공지사항 제목이 나타나는 위치","조회수 100","2021-12-30");
+			n01.notice();
+			n01.notice();
+			n01.notice();
+			n01.notice();
+			n01.notice();
+			n01.notice();
+			n01.notice();
+			n01.notice();
+			n01.notice();
+			n01.notice();
+		}
+		class Notice{
+			constructor(title, view, date){
+				this.title = title;
+				this.view = view;
+				this.date = date;
+			}
+			notice(){
+				var divObj = document.querySelector("div.noticeList");
+				var htmlCode = "";
+				htmlCode += "<div class='noteice'><span class='nTitle'>"+this.title+"</span><span>"+this.view+"</span><span>"+this.date+"</span></div>"
+				divObj.innerHTML += htmlCode;
+			}
+		}
+	</script>
+      <script src="../00_jquery/jquery-3.6.0.js" type="text/javascript"></script>
+      <script>
+        $(document).ready(function(){
+            $(".menuBtn>ul>li").click(function(){
+                $(".menuBtn>ul>li").css("background","#6d6e70").css("color","#fff").css("font-weight","400");
+				$(".menuBtn>ul>li").css("border", "1px solid #6d6e71");
+                
+				$(this).css("background","#fff").css("color","#d60815");
+				$(this).css("border","border: 1px solid #6d6e71;").css("border-bottom-color","#fff")
+				$(this).css("font-weight","bold");
+                }); 
+         });
       </script>
+      <link rel = "stylesheet" type = "text/css" href = "../00_css/main.css">
+	  <link rel="stylesheet" href="../00_css/04_support.css">  
    </head>
    <body>
-	<h3>공지사항</h3> 
-	<!-- 아래는 제목 검색어 입력 -->
-	<div class="total_search_input type02">
+   
+	<div class="location_bar">
+		<div class="inner">
+			<a href="../01_home/home.html" class="home"><span class="hidden"></span></a>
+			<ul class="loca_menulist">
+				<li>				
+					<a href="javascript:sharpNothig();" class="current"></a>	
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="container">
+		<h3>공지사항</h3> 
+		<!-- 아래는 제목 검색어 입력 -->
+		
+		<div class="total_search_input type02">
 			<div class="inner">
 				<div class="row">
 					<select class="white" name="searchOption" id="searchOption" style="width:180px;" title="검색 분류 선택" value="0">
@@ -29,15 +81,23 @@
 				</div>
 			</div>
 		</div>
+		
+		<div class="menuBtn">	
+			<ul>
+				<li class="on">전체</li>
+				<li>아시아나소식</li>
+				<li>유류할증료</li>
+				<li>아시아나클럽</li>
+				<li>제휴사 소식</li>
+				<li>기타</li>
+			</ul>	
+		</div>
+		
+
+		<div class="noticeList">
+
+		</div>
+	</div>
 	
-					
-		<ul class="tab_head_t6">
-			<li class="on"><a href="#all" title="선택됨"><span>전체</span></a></li>
-			<li><a href="#01" data-value="01" title=""><span>아시아나소식</span></a></li>
-			<li><a href="#02" data-value="02" title=""><span>유류할증료</span></a></li>
-			<li><a href="#03" data-value="03" title=""><span>아시아나클럽</span></a></li>
-			<li><a href="#04" data-value="04" title=""><span>제휴사 소식</span></a></li>
-			<li><a href="#05" data-value="07" title=""><span>기타</span></a></li>
-		</ul>
    </body>
 </html>

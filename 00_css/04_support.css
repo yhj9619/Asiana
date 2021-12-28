@@ -1,52 +1,55 @@
 @charset "UTF-8";
-h3 {	
-	margin: 60px 0 50px 0;
+
+.container{
+    padding-left: 20%;
+    padding-right:20%;
+    display: inline-block;
+}
+
+.container > h3 {
     font-size: 40px;
     color: #000;
     text-align: center;
     font-weight: normal;
-    line-height: 1; 
+}
+
+.container .inner{
+    display: table;
+    position: relative;
+    height: 44px;
+    margin: 0 auto;
 }
 
 .total_search_input {
-    position: relative;
-    padding: 40px 0;
+    display: inherit;
+    width:960px;
+    padding: 40px;
     border-radius: 5px;
     background-color: #f0f0f0;
 }
 
-
-
-
-
-element.style{
-	width: 180px;
-} 
 .total_search_input.type02 select {
-    height: 46px;
+    height: 46px;   
 }
-.total_search_input.type02 select, .total_search_input.type02 input, .total_search_input.type02 .btn_M {
-    float: left;
+
+.total_search_input.type02 select:hover {
+    border: 1px solid #d60815;
 }
+
+#searchText:hover {
+    border: 1px solid #d60815;
+}
+
 select.white {
-    height: 40px;
     border: 1px solid #cdd1d3;
-    background: #fff url(https://flyasiana.com/C/pc/image/common/bg_select_arrow.png) no-repeat right 13px top 50%;
+    background: #fff  no-repeat right 13px top 50%;
 }
-select {
-    height: 46px;
+select {    
     padding: 0 45px 0 15px;
-    margin-right: 10px;
-    border: 1px solid #f3f3f3;
-    border-bottom: 1px solid #ddd;
-    background: #f3f3f3 url(https://flyasiana.com/C/pc/image/common/bg_select_arrow.png) no-repeat right 13px top 50%;
-    background-size: 12px 8px;
+    margin-right: 10px;   
     color: #222;
     vertical-align: middle;
 }
-
-
-
 
 
 .total_search_input.type02 input {
@@ -57,9 +60,7 @@ select {
     box-sizing: border-box;
 }
 
-.total_search_input.type02 select, .total_search_input.type02 input, .total_search_input.type02 .btn_M {
-    float: left;
-}
+
 .total_search_input input {
     width: 614px;
     height: 44px;
@@ -74,6 +75,7 @@ select {
 .total_search_input.type02 select, .total_search_input.type02 input, .total_search_input.type02 .btn_M {
     float: left;
 }
+
 button.red {
     border: 1px solid #d60815;
     background-color: #d60815;
@@ -85,12 +87,65 @@ button.red {
     min-height: 46px;
     line-height: 17px;
 }
-.btn_L, .btn_M, .btn_S, .btn_XS {
-    border-radius: 3px;
-    text-align: center;
+
+.btn_M:hover {
+    background-color: #c40b17;
 }
 
-.tab_head_t6{
-    display: flex;
-    float: left;
+.menuBtn > ul > li{
+    display: table-cell;
+    width:160px;
+    height: 63px;
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+    background: #6d6e70;
+    color: #fff;
+    border-bottom-color: #fff;
+    border-left: 1px solid #fff;
+    box-sizing: border-box;
+    vertical-align: middle;
+    word-break: keep-all;
+    font-weight:
 }
+
+.menuBtn > ul > li.on{
+    background: #fff;
+    border: 1px solid #6d6e71;
+    border-right: none;
+    border-bottom-color: #fff;
+    color: #d60815;
+    font-weight: bold;
+    background: #fff;
+}
+
+.menuBtn > ul > li:hover{
+    background: #646668;
+}
+
+.noticeList {
+    margin-top: 10%;
+    border-top: 3px solid #646668;
+}
+
+.noticeList > div{
+    padding:20px;
+    border-bottom: 1px solid #646668;
+}
+
+.noticeList > div:hover{
+    background-color: #f7f7f7;
+}
+
+.noticeList > div > span {
+    display: inline-block;
+    min-width: 126px;
+    color: #555;
+}
+
+.noticeList > div > span.nTitle {
+    color: #000;
+    font-weight: bold;
+    margin-right:50%;
+}
+
