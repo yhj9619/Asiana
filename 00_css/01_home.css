@@ -1,4 +1,18 @@
-#main_header_wrap{
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    margin: 5px;
+}
+
+a:hover, a:active { 
+    text-decoration: none; 
+}
+
+.main_header_wrap{
     display: block;
     position: fixed;
     top: 0;
@@ -112,3 +126,65 @@
     padding: 600px 800px;
     float: right;
 }
+.event1{
+    display : block;
+    position: fixed;
+    margin-bottom : left;
+    padding: 1200px 0px;
+    float: left;
+}
+.event2{
+    display : block;
+    position: fixed;
+    margin-bottom : left;
+    padding: 1200px 400px;
+    float: left;
+}
+.event3{
+    display : block;
+    position: fixed;
+    margin-bottom : left;
+    padding: 1200px 800px;
+    float: left;
+}
+.alarm{
+    display : block;
+    position: fixed;
+    margin-bottom : center;
+    padding: 1500px 400px;
+    float: center;
+}
+.tool1{
+    display : block;
+    position: fixed;
+    margin-bottom : left;
+    padding: 1800px 0px;
+    float: left;
+}
+.tool2{
+    display : block;
+    position: fixed;
+    margin-bottom : left;
+    padding: 1800px 100px;
+    float: left;
+}
+.tool3{
+    display : block;
+    position: fixed;
+    margin-bottom : left;
+    padding: 1800px 200px;
+    float: left;
+}
+.tool4{
+    display : block;
+    position: fixed;
+    margin-bottom : left;
+    padding: 1800px 300px;
+    float: left;
+}
+.tool5{
+    display : block;
+    position: fixed;
+    margin-bottom : left;
+    padding: 1800px 400 px;
+    float: left;
