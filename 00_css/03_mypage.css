@@ -1,17 +1,35 @@
-div{
-    display:flex;
-    align:center;
-    width:1500px;
-    height:250px;
+.my_info_wrap{
     background-image:url('../03_mypage/media/cloud.jpg');
-    text-align:center;
+    width: 2500px;
+    height: 300px;
+    background-size: repeat-x;
+    background-position: center center;
+}
+
+img{
+    display: block;
+    margin: 0px auto;
 }
 
 table{
     margin-left:auto;
     margin-right:auto;
+    
 }
 table, td, th{
     border-collapse:collapse;
 
+}
+
+.front{
+    position: absolute;
+    
+}
+
+a:visited{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
 }
