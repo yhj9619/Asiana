@@ -47,47 +47,107 @@
         <button>왕복</button>
         <button>편도</button>
         <button>다구간</button>
-     </div>
-      <br>
-      <br>  
-         	
-       <input type = "text" name ="first" textarea placeholder="출발지" style="width:150pt;height:30pt" list="department"/>
-        <datalist id ="department">
-  	  	   <option value = "서울/인천">서울/인천</option>
-  	  	   <option value = "서울/김포">서울/김포</option>
-  	  	   <option value = "부산/김해">부산/김해</option>
-  	  	   <option value = "여수">여수</option>
-  	  	   <option value = "광주">광주</option>
-  	  	   <option value = "청주">청주</option>
-  	  	   <option value = "울산">울산</option>
-  	  	   <option value = "대구">대구</option>
-  	  	   <option value = "제주">제주</option>  
-  	  </datalist>
-  	  
-  	   <input type = "text" name ="first" textarea placeholder="도착지" style="width:150pt;height:30pt" list="arrivals"/>
-  	  	<datalist id = "arrivals">
-  	  	   <option value = "서울/인천">서울/인천</option>
-  	  	   <option value = "서울/김포">서울/김포</option>
-  	  	   <option value = "부산/김해">부산/김해</option>
-  	  	   <option value = "여수">여수</option>
-  	  	   <option value = "광주">광주</option>
-  	  	   <option value = "청주">청주</option>
-  	  	   <option value = "울산">울산</option>
-  	  	   <option value = "대구">대구</option>
-  	  	   <option value = "제주">제주</option>  
-  	  	</datalist>
+      </div>
+      <div class="destination">
+         <input type = "text" name ="first" textarea placeholder="출발지" style="width:150pt;height:30pt" list="department"/>
+         <datalist id ="department">
+            <option value = "서울/인천">서울/인천</option>
+            <option value = "서울/김포">서울/김포</option>
+            <option value = "부산/김해">부산/김해</option>
+            <option value = "여수">여수</option>
+            <option value = "광주">광주</option>
+            <option value = "청주">청주</option>
+            <option value = "울산">울산</option>
+            <option value = "대구">대구</option>
+            <option value = "제주">제주</option>  
+      </datalist>
+      
+         <input type = "text" name ="first" textarea placeholder="도착지" style="width:150pt;height:30pt" list="arrivals"/>
+         <datalist id = "arrivals">
+            <option value = "서울/인천">서울/인천</option>
+            <option value = "서울/김포">서울/김포</option>
+            <option value = "부산/김해">부산/김해</option>
+            <option value = "여수">여수</option>
+            <option value = "광주">광주</option>
+            <option value = "청주">청주</option>
+            <option value = "울산">울산</option>
+            <option value = "대구">대구</option>
+            <option value = "제주">제주</option>  
+         </datalist>
 
-		<input type="text" class="formcontrollinkedCanlendars" placeholder="탑승일"/>
-		<span class="input-group-text calendar icon">
-		<i data-feature="calendar" class="feature-sm"></i>
-		</span>
-     
-      <br>
-      <br>
+         <input type="text" class="formcontrollinkedCanlendars" placeholder="탑승일"/>
+         <span class="input-group-text calendar icon">
+         <i data-feature="calendar" class="feature-sm"></i>
+         </span>
+      </div>
+
+      <script>
+      	function count(type)  {
+            // 결과를 표시할 element
+            const resultElement01 = document.getElementById('result01');
+            const resultElement02 = document.getElementById('result02');
+            const resultElement03 = document.getElementById('result03');
+            
+            // 현재 화면에 표시된 값
+            let number01 = resultElement01.innerText;
+            let number02 = resultElement02.innerText;
+            let number03 = resultElement03.innerText;
+
+            // 더하기/빼기
+            if(type === 'plus01') {
+               number01 = parseInt(number01) + 1;
+            }else if(type === 'minus01')  {
+               number01 = parseInt(numbe01) - 1;
+            }
+
+            if(type === 'plus02') {
+               number02 = parseInt(number02) + 1;
+            }else if(type === 'minus02')  {
+               number02 = parseInt(number02) - 1;
+            }
+
+            if(type === 'plus03') {
+               number03 = parseInt(number03) + 1;
+            }else if(type === 'minus03')  {
+               number03 = parseInt(number03) - 1;
+            }
+            
+            // 결과 출력
+            resultElement01.innerText = number01;
+            resultElement02.innerText = number02;
+            resultElement03.innerText = number03;
+         }
+      </script>
+      
+
       <h2>탑승 인원 선택</h2>
-      성인 (만 12세 이상)&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-      소아 (만 2세 ~ 12세 미만)&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-      유아 (만 2세 미만)
+      <div class="passenger">
+         <div>
+            <h3>성인</h3><h5>(만 12세 이상)</h5>
+            <div class = "passCnt">
+               <button onclick="count('minus01')">-</button>
+               <span id="result01">0</span>
+               <button onclick="count('plus01')">+</button>
+            </div>
+         </div>
+         <div>
+            <h3>소아</h3><h5>(만 2세 ~ 12세 미만)</h5>
+            <div class = "passCnt">
+               <button onclick="count('minus02')">-</button>
+               <span id="result02">0</span>
+               <button onclick="count('plus02')">+</button>
+            </div>
+         </div>
+         <div>
+            <h3>유아</h3><h5>(만 2세 미만)</h5>
+            <div class = "passCnt">
+               <button onclick="count('minus03')">-</button>
+               <span id="result03">0</span>
+               <button onclick="count('plus03')">+</button>
+            </div>
+         </div>
+      </div>
+
       <br>
       <br>
       <br>
