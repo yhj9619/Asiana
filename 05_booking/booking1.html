@@ -2,59 +2,10 @@
 <html>
    <head>
       <meta charset="UTF-8">
+      <link rel = "stylesheet" type = "text/css" href = "../00_css/main.css">
+	   <link rel="stylesheet" href="../00_css/05_booking.css">  
       <title>여정선택 | 아시아나항공</title>
-   
-   	 <style>
-   		.method{
-            display:flex;
-            float:left;
-         }
-         .method > button{
-            width: 60pt;
-            height: 20pt;
-            cursor:pointer;
-            text-align: center;
-            border: 0.5px solid #6d6e72;
-            border-radius: 3px;
-            background:white;
-         }
-
-         .selectGrade{
-            display:flex;
-            float:left;
-         }
-         
-         .grade{
-            display:flex;
-            float:left;
-            padding: 5px;
-         }
-         .grade > button {
-            width:150pt;
-            height:30pt;
-            text-align:center;
-            border : none;
-            margin: 1px;
-            
-         }
-
-         .lookUp{
-            display:flex;
-            float:right;
-            padding: 5px;
-         }
-         .lookUp>button{
-            width:100pt;
-            height:30pt;
-            border: 1px solid #d60815;
-            background: #d60815;
-            color: #fff;
-         }
-         .lookUp>button:hover{
-            background: #b90612;
-            border-radius: 3px;
-         }
-
+   	<style>
       </style>
       <script src="../00_jquery/jquery-3.6.0.js" type="text/javascript"></script>
       <script>
@@ -63,15 +14,11 @@
                   $(".method>button").css("background","").css("color","");
                    $(this).css("background","#d60815").css("color","#fff");
                 }); 
-         });
-      </script>
-      <script>
-        $(document).ready(function(){
             $(".grade>button").click(function(){
                 $(".grade>button").css("background","").css("border","");
                  $(this).css("backgroung","#fff").css("border","1px solid #d60815");   
             });
-        });
+         });
       </script>
       <script>
       $('.linkedCalendars').daterangepicker({

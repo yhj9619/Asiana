@@ -1,0 +1,49 @@
+.method{
+    display:flex;
+    float:left;
+ }
+ .method > button{
+    width: 60pt;
+    height: 20pt;
+    cursor:pointer;
+    text-align: center;
+    border: 0.5px solid #6d6e72;
+    border-radius: 3px;
+    background:white;
+ }
+
+ .selectGrade{
+    display:flex;
+    float:left;
+ }
+ 
+ .grade{
+    display:flex;
+    float:left;
+    padding: 5px;
+ }
+ .grade > button {
+    width:150pt;
+    height:30pt;
+    text-align:center;
+    border : none;
+    margin: 1px;
+    
+ }
+
+ .lookUp{
+    display:flex;
+    float:right;
+    padding: 5px;
+ }
+ .lookUp>button{
+    width:100pt;
+    height:30pt;
+    border: 1px solid #d60815;
+    background: #d60815;
+    color: #fff;
+ }
+ .lookUp>button:hover{
+    background: #b90612;
+    border-radius: 3px;
+ }
