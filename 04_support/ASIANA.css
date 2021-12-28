@@ -1,0 +1,153 @@
+@charset "UTF-8";
+
+
+.location_bar {
+    clear: both;
+    position: relative;
+    z-index: 201;
+    height: 48px;
+    background: #6d6e70;
+    color: #fff;
+}
+
+
+.location_bar .home {
+    display: inline-block;
+    float: left;
+    width: 50px;
+    height: 48px;
+    background: #5f6062 url(https://flyasiana.com/C/pc/image/common/ico_loca_home.png) center center no-repeat;
+}
+a {
+    border: 0;
+    color: #222;
+    text-decoration: none;
+}
+
+
+
+h3 {	
+		    margin: 60px 0 50px 0;
+    font-size: 40px;
+    color: #000;
+    text-align: center;
+    font-weight: normal;
+    line-height: 1; 
+}
+
+
+.total_search_input {
+    position: relative;
+    padding: 40px 0;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+}
+div {
+    display: block;
+}
+
+
+
+
+element.style{
+	width: 180px;
+} 
+.total_search_input.type02 select {
+    height: 46px;
+   
+}
+
+select.white {
+    border: 1px solid #cdd1d3;
+    background: #fff  no-repeat right 13px top 50%;
+}
+select {    
+    padding: 0 45px 0 15px;
+    margin-right: 10px;   
+    color: #222;
+    vertical-align: middle;
+}
+
+
+
+
+
+.total_search_input.type02 input {
+    width: 400px;
+    height: 46px;
+    border: 1px solid #ccc;
+    vertical-align: top;
+    box-sizing: border-box;
+}
+
+
+.total_search_input input {
+    width: 614px;
+    height: 44px;
+    margin-right: 0;
+    padding: 0 35px 0 15px;
+    border: 1px solid #ccc;
+    line-height: 44px;
+    background-color: #fff;
+}
+
+
+.total_search_input.type02 select, .total_search_input.type02 input, .total_search_input.type02 .btn_M {
+    float: left;
+}
+
+button.red {
+    border: 1px solid #d60815;
+    background-color: #d60815;
+    color: #fff;
+}
+.btn_M {
+    padding: 11px 30px;
+    font-size: 15px;
+    min-height: 46px;
+    line-height: 17px;
+}
+.btn_L, .btn_M, .btn_S, .btn_XS {
+    border-radius: 3px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+.tab_wrap3 .tab_head > li.on > a {
+    background: #fff;
+    border: 1px solid #6d6e71;
+    border-right: none;
+    border-bottom-color: #fff;
+    color: #d60815;
+    font-weight: bold;
+    background: #fff;
+}
+
+.tab_wrap3 .tab_head > li > a {
+    display: table-cell;
+    width: 100%;
+    height: 63px;
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+    background: #6d6e70;
+    color: #fff;
+    border-bottom: 1px solid #666;
+    border-left: 1px solid #fff;
+    box-sizing: border-box;
+    vertical-align: middle;
+    word-break: keep-all;
+}
+
+.tab_wrap3 .tab_head > li.on + li a {
+    border-left: 1px solid #6d6e71;
+}
+
+
+
