@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="UTF-8">
+      <title>[탑승자정보 페이지]</title>
+      <style>
+      	  .lookUp{
+            display:flex;
+            float:right;
+            padding: 5px;
+         }
+         .lookUp>button{
+            width:100pt;
+            height:30pt;
+            border: 1px solid #d60815;
+            background: #d60815;
+            color: #fff;
+         }
+         .lookUp>button:hover{
+            background: #b90612;
+            border-radius: 3px;
+         }
+         table{
+         	width:80%;
+         	border: 1px solid;
+         	margin-left:auto;
+         	margin-right:auto;
+         }
+         td{
+           padding: 10px;
+           border: 1px solid;
+         }
+         .a{
+        	border-collapse: collapse;
+         }
+         .b{
+        	border-collapse: collapse;
+         }
+        
+      </style>
+      <script>
+      window.onload=function(){
+         var h1Arr = document.querySelectorAll("h1");
+         h1Arr[0].innerText = "탑승자 정보";
+      }            
+      </script>
+   </head>
+   <body>
+      <h1 align="center"></h1>
+      <br>
+      <hr>
+     <h5 style="color:gray;font-weight:100;">임신 32주 이상의 임신부 고객은 탑승이 제한될 수 있으니 사전에 확인하시기 바랍니다.(37주 이상은 탑승불가)</h5> 
+   	  <hr>
+   	  <br>
+   	  <h4>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp성인1</h4>
+   	  <table class="a">
+   	  	<tr><td width=
+   	  	20 bgcolor="gray">성별</td><td width=180></td></tr>
+   	  	<tr><td bgcolor="gray">이름</td><td></td></tr>
+   	  	<tr><td bgcolor="gray">생년월일</td><td></td></tr>
+   	  	<tr><td bgcolor="gray">회원번호</td><td></td></tr>
+   	  </table>
+   	  <br>
+   	  <br>
+   	  <br>
+   	  <h1 align="center" >예약자 연락처 정보</h1>
+   	  <h5 style="color:gray;font-weight:100;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp예약정보수신 연락처에 작성하신 이메일로 구매 결과와 여정안내서를 전송해드립니다.</h5>
+   	  <table class="b">
+   	  	<tr><td style=“color:white” width=30 bgcolor="gray">이메일</td><td width=170></td></tr>
+   	  	<tr><td bgcolor="gray">전화번호</td><td></td></tr>
+   	  	<tr><td bgcolor="gray">비밀번호 설정</td><td></td></tr>
+   	  	<tr><td bgcolor="gray">비밀번호 확인</td><td></td></tr>
+   	  </table>
+   	  
+   	  
+   	  <div class="lookUp">
+      <button>다음</button>
+      </div>
+   
+   </body>
+</html>

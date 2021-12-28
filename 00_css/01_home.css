@@ -1,0 +1,114 @@
+.main_header_wrap{
+    display: block;
+    position: fixed;
+    top: 0;
+    padding: 20px 20px;
+}
+
+.util_rap{
+    background: white;
+    height: 40px;
+    box-sizing: border-box;
+}
+.inner{
+    width: 1180px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    font-size: 13px;
+    color: #222;
+}
+.top1{
+    margin: 5px 5px;
+    padding: 10px;
+    display: flex;
+    float: left;
+}
+
+.top2{
+    margin: 5px 5px;
+    padding: 10px;
+    display: flex;
+    float: right;
+}
+.h._inner{
+    width: 1180px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    float: left;
+}
+.h_inner .logo{
+    width: 20px;
+    height: 38px;
+}
+
+.nav{
+    float: left;
+    height: 83px;
+    box-sizing: border-box;
+}
+
+.nav_list{
+    height: 100%;
+}
+
+.nav_list > li{
+    display: flex;
+    float: left;
+}
+
+.nav_list > li > a{
+    display: inline-block;
+    min-width: 120px;
+    height: 100%;
+    box-sizing: border-box;
+    margin-left: 15px;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    color: #000;
+    line-height: 78px;
+    margin: 5px 5px;
+}
+
+.nav_list > li:hover{
+    border-bottom:3px solid red;
+}
+
+.nav_right{
+    margin-left: 15px;
+    margin-top: 10px;
+    display: flex;
+    float: right;
+}
+.bottom{
+    margin-top:90px;
+    border-bottom: 16px solid #6d6e70;
+}
+.intro{
+    display: block;
+    position: fixed;
+    margin-bottom: left;
+    padding: 20px 20px;
+}
+.low_price1{
+    display : block;
+    position: fixed;
+    margin-bottom : left;
+    padding: 600px 0px;
+    float: left;
+}
+.low_price2{
+    display : block;
+    position: fixed;
+    margin-bottom : left;
+    padding: 600px 400px;
+    float: left;
+}
+.low_price3{
+    display : block;
+    position: fixed;
+    margin-bottom : right;
+    padding: 600px 800px;
+    float: right;
+}

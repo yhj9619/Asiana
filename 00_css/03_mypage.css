@@ -1,0 +1,17 @@
+div{
+    display:flex;
+    align:center;
+    width:1500px;
+    height:250px;
+    background-image:url('../03_mypage/media/cloud.jpg');
+    text-align:center;
+}
+
+table{
+    margin-left:auto;
+    margin-right:auto;
+}
+table, td, th{
+    border-collapse:collapse;
+
+}
