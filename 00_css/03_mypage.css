@@ -1,6 +1,5 @@
-div{
+.myCls{
     display:flex;
-    align:center;
     width:1500px;
     height:250px;
     background-image:url('../03_mypage/media/cloud.jpg');
