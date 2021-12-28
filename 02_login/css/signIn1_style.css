@@ -45,6 +45,7 @@ button {
 /* 동의 버튼 */
 .accept {
   background-color: red;
+  color: white;
 }
 .accept>a {
   color: white;
