@@ -1,19 +1,5 @@
-li{
-    list-style: none;
-}
-
-a{
-    text-decoration: none;
-    color: black;
-    margin: 5px;
-}
-
-a:hover, a:active { 
-    text-decoration: none; 
-}
-
 .main_header_wrap{
-    display: block;
+    display: inline-block;
     position: fixed;
     top: 0;
     padding: 20px 20px;
@@ -99,54 +85,34 @@ a:hover, a:active {
     margin-top:90px;
     border-bottom: 16px solid #6d6e70;
 }
+
 .intro{
     display: block;
     position: fixed;
     margin-bottom: left;
     padding: 20px 20px;
 }
-.low_price1{
+
+.low_price{
     display : block;
     position: fixed;
     margin-bottom : left;
     padding: 600px 0px;
     float: left;
 }
-.low_price2{
-    display : block;
-    position: fixed;
-    margin-bottom : left;
-    padding: 600px 400px;
-    float: left;
+
+.low_price > div {
+    margin: 10px;
 }
-.low_price3{
-    display : block;
-    position: fixed;
-    margin-bottom : right;
-    padding: 600px 800px;
-    float: right;
-}
-.event1{
+
+.event{
     display : block;
     position: fixed;
     margin-bottom : left;
     padding: 1200px 0px;
     float: left;
 }
-.event2{
-    display : block;
-    position: fixed;
-    margin-bottom : left;
-    padding: 1200px 400px;
-    float: left;
-}
-.event3{
-    display : block;
-    position: fixed;
-    margin-bottom : left;
-    padding: 1200px 800px;
-    float: left;
-}
+
 .alarm{
     display : block;
     position: fixed;
