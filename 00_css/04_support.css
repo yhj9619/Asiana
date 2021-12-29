@@ -1,5 +1,19 @@
 @charset "UTF-8";
 
+.location_bar {
+    height: 48px;
+    background: #6d6e70;
+    color: #fff;
+}
+
+
+.location_bar .home {
+    display: block;
+    width: 50px;
+    height: 48px;
+    background: #5f6062 url(https://flyasiana.com/C/pc/image/common/ico_loca_home.png) center center no-repeat;
+}
+
 .container{
     padding-left: 20%;
     padding-right:20%;
@@ -125,7 +139,7 @@ button.red {
 
 .noticeList {
     margin-top: 10%;
-    border-top: 3px solid #646668;
+    border-top: 2px solid #646668;
 }
 
 .noticeList > div{

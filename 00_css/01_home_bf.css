@@ -1,3 +1,10 @@
+.main_header_wrap{
+    display: inline-block;
+    position: fixed;
+    top: 0;
+    padding: 20px 20px;
+}
+
 .util_rap{
     background: white;
     height: 40px;
@@ -78,6 +85,7 @@
     margin-top:90px;
     border-bottom: 16px solid #6d6e70;
 }
+
 .low_price > li > b{
     display: inline-block;
     min-width: 120px;

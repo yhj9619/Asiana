@@ -5,22 +5,9 @@ li{
 a{
     text-decoration: none;
     color: black;
+    margin: 5px;
 }
 
 a:hover, a:active { 
     text-decoration: none; 
-}
-
-.location_bar {
-    height: 48px;
-    background: #6d6e70;
-    color: #fff;
-}
-
-
-.location_bar .home {
-    display: block;
-    width: 50px;
-    height: 48px;
-    background: #5f6062 url(https://flyasiana.com/C/pc/image/common/ico_loca_home.png) center center no-repeat;
 }
